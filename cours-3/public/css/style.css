@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/public/img/bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+ul{
+height:70px;
+display:flex;
+align-items: center;
+}
+
+li{
+    list-style:none;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-label {
+    font-weight: 500
+}
+
+ul,
+footer {
+    border: solid 1px white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.alert {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card-header {
+    font-size: 25px;
+    font-weight: bold
+}
+
+.card-body {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.gradient-custom {
+    background: #d4fc79;
+
+
+    background: linear-gradient(to bottom, rgba(73, 141, 74, 0.8),rgba(73, 141, 74, 0.8))
+}
+
+.nav-link-hover:hover {
+    color: #ff007a;
+    text-shadow: 1px 1px 5px black;
+}
+
+.btn {
+    outline-style: groove;
+}
