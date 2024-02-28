@@ -39,6 +39,7 @@
             </li>
         <?php
         } else { ?>
+
             <!-- sinon on affiche le bouton login -->
             <li class="nav-item">
                 <a class="btn gradient-custom text-light" href="login">Connexion</a>
@@ -46,6 +47,9 @@
             <li class="nav-item">
                 <a class="btn gradient-custom text-light" href="register">Inscription</a>
             </li>
+
         <?php
         } ?>
+                      
+        
     </ul>

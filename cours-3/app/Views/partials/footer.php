@@ -7,17 +7,7 @@
   <!-- Copyright -->
 </footer>
 
-<script>
-function togglePasswordVisibility() {
-    var passwordField = document.getElementById("passwordField");
-    if (passwordField.type === "password") {
-        passwordField.type = "text";
-        
-    } else {
-        passwordField.type = "password";
-    }
-}
-</script>
+<script src="/public/js/script.js"></script>
 </body>
 
 </html>
