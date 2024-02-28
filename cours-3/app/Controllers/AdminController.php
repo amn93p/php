@@ -1,6 +1,5 @@
 <?php
 
-require_once(__DIR__.'/../../config/db.php');
 
 $userQuery = "SELECT * FROM user";
 
@@ -10,4 +9,4 @@ $userStatement->execute();
 
 $users = $userStatement->fetchAll();
 
-require_once(__DIR__.'/../Views/admin.view.php');
+require_once(__DIR__.'/../Views/admin/admin.view.php');

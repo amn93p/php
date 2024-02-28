@@ -1,7 +1,5 @@
 <?php
 
-require_once(__DIR__. '/../../config/db.php');
-
 if (isset($_GET['id'])) {
     $id= $_GET['id'];
 
@@ -23,4 +21,4 @@ else{
     exit;
 }
 
-require_once(__DIR__ . '/../Views/productRead.view.php');
+require_once(__DIR__ . '/../Views/product/productRead.view.php');

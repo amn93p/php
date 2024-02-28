@@ -1,7 +1,5 @@
 <?php
 
-require_once(__DIR__ . '/../../config/db.php');
-
 if (isset($_POST['title']) && isset($_POST['description']) && isset($_POST['price']) && $_POST['price'] > 0 && strlen($_POST['title']) > 2) {
     $title = $_POST['title'];
     $description = $_POST['description'];
@@ -17,11 +15,7 @@ if (isset($_POST['title']) && isset($_POST['description']) && isset($_POST['pric
 
     $productStatement->execute();
 
-    http_response_code(303);
-    header('Location: /product');
-    exit();
-} else {
-    echo "erreur";
+    redirectToRoute('/product');
 }
 
-require_once(__DIR__ . '/../Views/productCreate.view.php');
+require_once(__DIR__ . '/../Views/product/productCreate.view.php');

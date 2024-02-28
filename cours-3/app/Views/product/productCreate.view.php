@@ -1,9 +1,9 @@
 <?php
 $title = 'Créer un produit';
-require_once(__DIR__ . '/partials/head.php');
+require_once(__DIR__ . '/../partials/head.php');
 ?>
 
-<div class="container">
+<div class="container space">
     <h1>Créer un produit</h1>
     <form action="/product-create" method="POST">
         <div class="card">
@@ -27,5 +27,5 @@ require_once(__DIR__ . '/partials/head.php');
 </div>
 
 <?php
-require_once(__DIR__ . '/partials/footer.php');
+require_once(__DIR__ . '/../partials/footer.php');
 ?>

@@ -1,5 +1,4 @@
 <?php
-require_once(__DIR__ . '/../../config/db.php');
 
 //on verifie que le formulaire a été envoyé
 if (
@@ -12,9 +11,9 @@ if (
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $error="E-mail invalide";
-        require_once(__DIR__.'/../Views/register.view.php');
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error = "E-mail invalide";
+        require_once(__DIR__ . '/../Views/security/register.view.php');
         exit;
     }
 
@@ -39,9 +38,7 @@ if (
             $userStatement->bindParam(':password', $password);
 
             $userStatement->execute();
-            http_response_code(303);
-            header('Location: /login');
-            exit();
+            redirectToRoute('/login');
         } else {
             $error = "
 - Au moins 8 caractères <br>
@@ -54,4 +51,4 @@ if (
     }
 }
 
-require_once(__DIR__ . '/../Views/register.view.php');
+require_once(__DIR__ . '/../Views/security/register.view.php');

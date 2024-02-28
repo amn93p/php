@@ -1,6 +1,6 @@
 <?php
 $title = 'Inscription';
-require_once(__DIR__ . '/partials/head.php');
+require_once(__DIR__ . '/../partials/head.php');
 ?>
 
 <section action="/register" method="POST" class="vh-100 bg-image">
@@ -10,20 +10,20 @@ require_once(__DIR__ . '/partials/head.php');
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Créer un compte</h2>
+              <h2 class="text-uppercase text-center mb-5">S'INSCRIRE</h2>
 
               <form action="/register" method="POST">
 
                 <div class="form-outline mb-4">
-                  <input type="text" name="name" class="form-control form-control-lg" />
+                  <input type="text" name="name" class="form-control form-control-lg" placeholder="Veuillez entrer un nom.." />
                   <label class="form-label" for="name">Nom d'utilisateur:</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="email" name="email" class="form-control form-control-lg" />
+                  <input type="email" name="email" class="form-control form-control-lg" placeholder="Veuillez entrer un e-mail.."/>
                   <label class="form-label" for="email">Email:</label>
                   <div class="form-outline mb-4">
-                    <input type="password" name="password" class="form-control form-control-lg" id="passwordField" />
+                    <input type="password" name="password" class="form-control form-control-lg" id="passwordField" placeholder="Veuillez entrer un mot de passe.." />
                     <label class="form-label" for="password">Mot de passe:</label>
                     <i class="fa-solid fa-eye" style="color: #000000;" onclick="togglePasswordVisibility()"></i>
                   </div>
@@ -48,6 +48,6 @@ require_once(__DIR__ . '/partials/head.php');
 </section>
 
 <?php
-require_once(__DIR__ . '/partials/footer.php');
+require_once(__DIR__ . '/../partials/footer.php');
 
 ?>
