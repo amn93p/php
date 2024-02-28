@@ -1,12 +1,6 @@
 <?php
 
-// je me conencte à la base de donnee
-try {
-
-    $mysqlClient = new PDO('mysql:host=localhost;dbname=plante-et-co;charset=utf8', 'root');
-} catch (Exception $e) {
-    die('ERREUR : ' . $e->getMessage());
-}
+require_once(__DIR__.'/../../config/db.php');
 
 // j'écris ma requete sql que je met dans une variable
 $productQuery = "SELECT * FROM product";

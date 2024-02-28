@@ -9,13 +9,18 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 111vh;
+}
+
+i{
+    cursor:pointer;
 }
 
 ul{
 height:70px;
 display:flex;
 align-items: center;
+width:100%;
 }
 
 li{
@@ -43,6 +48,10 @@ li{
 
 .form-label {
     font-weight: 500
+}
+
+a{
+    margin-left:20px;
 }
 
 ul,
@@ -103,8 +112,4 @@ input {
 .nav-link-hover:hover {
     color: #ff007a;
     text-shadow: 1px 1px 5px black;
-}
-
-.btn {
-    outline-style: groove;
 }

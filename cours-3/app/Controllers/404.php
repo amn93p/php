@@ -27,7 +27,7 @@
 
         .error-code {
             font-size: 3rem;
-            color: grey;
+            color: green;
             margin-bottom: 1rem;
         }
 
@@ -39,7 +39,7 @@
 
         .error-link {
             font-size: 1.2rem;
-            color: grey;
+            color: green;
             text-decoration: none;
         }
 

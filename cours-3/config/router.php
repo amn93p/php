@@ -7,8 +7,14 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 $routes = [
     '/' => '/HomeController.php',
     '/mention-legales' => '/MentionController.php',
-    '/produit' => '/ProductController.php',
-    '/login' => '/LoginController.php'
+    '/product' => '/ProductController.php',
+    '/product-create' => '/ProductCreateController.php',
+    '/product-delete' => '/ProductDeleteController.php',
+    '/product-read' => '/ProductReadController.php',
+    '/login' => '/LoginController.php',
+    '/register' => '/RegisterController.php',
+    '/admin' => '/AdminController.php',
+    '/admin-delete' => '/AdminDeleteController.php'
 ];
 
 if (array_key_exists($uri, $routes)) {
